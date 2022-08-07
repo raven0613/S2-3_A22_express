@@ -1,0 +1,80 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-bar {
+  width: 100%;
+  height: 5rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1rem 6rem 10fr 6rem 6rem 6rem 1rem;
+      grid-template-columns: 1rem 6rem 10fr 6rem 6rem 6rem 1rem;
+  grid-gap: 0.5rem;
+      grid-template-areas: ". home . about portfolio contact .";
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.nav-bar .home {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: home;
+}
+
+.nav-bar .about {
+  -ms-grid-row: 1;
+  -ms-grid-column: 4;
+  grid-area: about;
+}
+
+.nav-bar .portfolio {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+  grid-area: portfolio;
+}
+
+.nav-bar .contact {
+  -ms-grid-row: 1;
+  -ms-grid-column: 6;
+  grid-area: contact;
+}
+
+.nav-bar .home, .nav-bar .about, .nav-bar .portfolio, .nav-bar .contact {
+  line-height: 2rem;
+  background-color: #c2c2c2;
+  text-align: center;
+  height: 2rem;
+  border-radius: 0.3rem;
+  font-weight: 600;
+}
+
+.nav-bar .home:active, .nav-bar .about:active, .nav-bar .portfolio:active, .nav-bar .contact:active {
+  background-color: #6d6d6d;
+}
+
+.nav-bar .home:hover, .nav-bar .about:hover, .nav-bar .portfolio:hover, .nav-bar .contact:hover {
+  background-color: darkgrey;
+}
+
+.nav-bar .active {
+  background-color: #444444;
+  color: azure;
+  pointer-events: none;
+}
+
+.nav-bar .active:hover {
+  background-color: #111111;
+}
+
+h1 {
+  padding: 2rem;
+}
+/*# sourceMappingURL=main.css.map */
